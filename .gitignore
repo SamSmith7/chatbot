@@ -1,0 +1,4 @@
+checkpoint
+model.tflearn.*
+tflearn_logs
+training_data
