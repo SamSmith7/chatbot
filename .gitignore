@@ -2,3 +2,6 @@ checkpoint
 model.tflearn.*
 tflearn_logs
 training_data
+__pycache__
+*.npy
+*.keras

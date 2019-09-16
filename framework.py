@@ -59,8 +59,7 @@ def classify(sentence):
     # results = model.predict([bow(sentence, words)])[0]
 
     # Keras Predictions
-    res = bow(sentence, words)
-    res = np.expand_dims(res, axis=0)
+    res = np.expand_dims(bow(sentence, words), axis=0)
 
     results = model.predict(res)[0]
     results = [[i, r] for i, r in enumerate(results) if r>ERROR_THRESHOLD]
